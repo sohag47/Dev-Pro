@@ -132,6 +132,15 @@ bind-address = 0.0.0.0
 # Allow port in firewall:
 sudo ufw allow 3306
 
+# for ORacle Linux
+sudo firewall-cmd --permanent --add-port=8080/tcp
+
+# Appliy for change
+sudo firewall-cmd --reload
+
+# Verify the Rule
+sudo firewall-cmd --list-ports
+
 # Restart MySQL:
 sudo systemctl restart mysql
 
