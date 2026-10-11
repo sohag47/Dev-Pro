@@ -101,6 +101,8 @@ sudo certbot --nginx -d example.com -d www.example.com
 # Agree terms:
 # Redirect HTTP → HTTPS: (choose Yes)
 # Certbot will automatically modify your Nginx config.
+sudo certbot --nginx -d visitors.itsl.cloud
+sudo certbot renew --dry-run
 ```
 
 ## Auto Renew SSL
